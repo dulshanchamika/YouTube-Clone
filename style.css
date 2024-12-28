@@ -229,6 +229,10 @@ body.sidebar-hidden .main-layout .sidebar {
   background: var(--light-gray-color);
 }
 
+.main-layout {
+    display: flex;
+}
+
 .main-layout .content-wrapper {
   padding: 0 16px;
   overflow-x: hidden;
@@ -237,8 +241,8 @@ body.sidebar-hidden .main-layout .sidebar {
 
 .content-wrapper .category-list {
   display: flex;
-  overflow-x: auto;
   gap: 12px;
+  overflow-x: auto;
   padding: 12px 0 11px;
   scrollbar-width: none;
 }
@@ -246,13 +250,13 @@ body.sidebar-hidden .main-layout .sidebar {
 .category-list .category-button {
   border: none;
   cursor: pointer;
-  font-weight: 500;
   font-size: 0.94rem;
+  font-weight: 500;
   border-radius: 8px;
   white-space: nowrap;
-  color: var(--black-color);
   padding: 6px 12px;
   background: var(--light-gray-color);
+  color: var(--black-color);  
 }
 
 .category-list .category-button.active {
